@@ -27,8 +27,13 @@ while(input!=='q'){
         }
         console.log("*****************");
         let index = prompt("Enter the Index of the Task");
+        if(index>=tasks.length){
+            console.log("Enter a Valid Index");
+        }else{
+        console.log(`INDEX OF TASK TO DELETE: ${index}`);
         tasks.splice(index,1);
         console.log("Task Deleted Successfully");
+        }
     }
     input= prompt("Enter the thing yo would like to do");
 
