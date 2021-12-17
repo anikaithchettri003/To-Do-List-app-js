@@ -7,7 +7,7 @@ while(input!=='q'){
     if(input=='new'){
         let newTask = prompt("Enter The Task");
         tasks.push(newTask);
-        console.log("New Task Added Successfully");
+        console.log(`${newTask} :Task  Added Successfully`);
     }
     else if(input=='list'){
         console.log("TASK LIST");
@@ -28,7 +28,7 @@ while(input!=='q'){
         console.log("*****************");
         let index = prompt("Enter the Index of the Task");
         if(index>=tasks.length){
-            console.log("Enter a Valid Index");
+            console.log("INDEX NOT VALID");
         }else{
         console.log(`INDEX OF TASK TO DELETE: ${index}`);
         tasks.splice(index,1);
