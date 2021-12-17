@@ -26,8 +26,8 @@ while(input!=='q'){
             console.log(`${i}. ${ tasks[i]}`);
         }
         console.log("*****************");
-        let index = prompt("Enter the Index of the Task");
-        if(index>=tasks.length){
+        let index = parseInt(prompt("Enter the Index of the Task"));
+        if(index>=tasks.length || Number.isNaN(index)==true){
             console.log("INDEX NOT VALID");
         }else{
         console.log(`INDEX OF TASK TO DELETE: ${index}`);
